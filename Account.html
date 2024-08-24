@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Products - TailorTrend </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-22 at 09.16.52_a974690c.jpg" width="125px">
+            </div>
+
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul> 
+            </nav>
+            <a href="cart.html"><img src="C:\Users\HP\Downloads\icons8-cart-24.png" height="27px"></a>
+            <img src="C:\Users\HP\Downloads\icons8-menu-30.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        </div>
+ 
+<!-------------------------------- Account page ------------------------------>
+
+<div class="account-page">
+    <div class="cointainer">
+        <div class="row">
+            <div class="col-2"><br><br><br><br>
+                <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-29 at 09.09.53_fa78f60c.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-cointainer">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Resgister</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password" >
+                        <button type="Submit" class="btn"> Login</button>
+                        <a href="">Forgot password</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="password" >
+                        <button type="Submit" class="btn"> Resgister</button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!------------ Footer ---------->
+
+<div class="Footer">
+    <div class="container">
+        <div class="row">
+            <div class="Footer-col-1">
+                <h3>Download Our App</h3>
+                <p> Download App for Androide and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-24 at 09.35.03_24090b48.jpg">
+                    <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-24 at 09.35.03_8d476ba7.jpg">
+                </div>
+            </div>
+            <div class="Footer-col-2">
+                <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-24 at 08.58.52_d754bf37.jpg" width="65px" >
+                <p>Our Purpose is to sustainably Make the Pleasure and Benefits of Sports Accessible to the Many </p>
+            </div>
+            <div class="Footer-col-3">
+                <h3> Useful Link</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="Footer-col-4">
+                <h3> Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright"> Copyright 2024 - Easy Tutorials</p>
+    </div>
+</div>
+
+<!------------------- js for toggle menu -------------------->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle()
+    {
+        if( MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+<!------------------------Js for toggle form------------------------------>
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translatex(0px)";
+        LoginForm.style.transform = "translatex(0px)";
+        Indicator.style.transform = "translatex(100px)";
+    }
+
+    function login(){
+        RegForm.style.transform = "translatex(300px)";
+        LoginForm.style.transform = "translatex(300px)";
+        Indicator.style.transform = "translatex(0px)";
+    }
+
+</script>
+
+</body>
+</html>

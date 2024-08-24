@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> All Products - TailorTrend </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-22 at 09.16.52_a974690c.jpg" width="125px">
+            </div>
+
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul> 
+            </nav>
+            <a href="cart.html"><img src="C:\Users\HP\Downloads\icons8-cart-24.png" height="27px"></a>
+            <img src="C:\Users\HP\Downloads\icons8-menu-30.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        </div>
+  <!------------------ Cart items--------------------------------------------------------------->
+
+<div class="small-cointainer cart-page">
+
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-28 at 08.41.37_b006c08e.jpg" width="200px">
+                <div>
+                   <p>HRX White Tshirt</p>
+                   <small>Prices:$55.00</small>
+                   <br>
+                   <a href="">Remove</a>
+                </div>
+            </div>
+
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$55.00</td>
+    </tr>
+   
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-14 at 10.07.10_7f55fe69.jpg" width="200px">
+                <div>
+                   <p>Sports Shoe</p>
+                   <small>Prices:$90.00</small>
+                   <br>
+                   <a href="">Remove</a>
+                </div>
+            </div>
+
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$90.00</td>
+    </tr>
+    <tr>
+        <td>
+            <div class="cart-info">
+                <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-14 at 10.07.09_a22036f0.jpg" width="200px">
+                <div>
+                   <p>Gym Gloves</p>
+                   <small>Prices:$35.00</small>
+                   <br>
+                   <a href="">Remove</a>
+                </div>
+            </div>
+
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$35.00</td>
+    </tr>
+</table>
+
+<div class="total-price">
+
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>$190.00</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>$25.00</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>$215.00</td>
+        </tr>
+    </table>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!------------ Footer ---------->
+
+<div class="Footer">
+    <div class="container">
+        <div class="row">
+            <div class="Footer-col-1">
+                <h3>Download Our App</h3>
+                <p> Download App for Androide and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-24 at 09.35.03_24090b48.jpg">
+                    <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-24 at 09.35.03_8d476ba7.jpg">
+                </div>
+            </div>
+            <div class="Footer-col-2">
+                <img src="C:\Users\HP\Desktop\images\WhatsApp Image 2024-07-24 at 08.58.52_d754bf37.jpg" width="65px" >
+                <p>Our Purpose is to sustainably Make the Pleasure and Benefits of Sports Accessible to the Many </p>
+            </div>
+            <div class="Footer-col-3">
+                <h3> Useful Link</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="Footer-col-4">
+                <h3> Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright"> Copyright 2024 - Easy Tutorials</p>
+    </div>
+</div>
+
+<!------------------- js for toggle menu -------------------->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle()
+    {
+        if( MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
